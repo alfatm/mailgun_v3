@@ -15,15 +15,16 @@ travis-ci = { repository = "otterandrye/mailgun_v3", branch = "master" }
 
 [dependencies]
 chrono = { version = "^0.4.23", default-features = false, features = ["clock"] }
-reqwest = { version = "^0.12", default-features = false, features = [
+reqwest = { version = "^0.13", default-features = false, features = [
 	"json",
 	"http2",
 	"deflate",
 	"gzip",
-	"rustls-tls",
+	"rustls",
 	"blocking",
 	"multipart",
 	"zstd",
+	"form",
 ] }
 serde = "^1.0.152"
 serde_derive = "^1.0.152"
